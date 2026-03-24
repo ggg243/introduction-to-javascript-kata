@@ -1,13 +1,15 @@
 import { useState } from 'react';
-import { CustomerForm } from './CustomerForm';
-import { CustomerList as ShowCustomer } from './CustomerList';
+import CustomerForm from './CustomerForm';
+import ShowCustomer from './CustomerList';
 
 let CustomerManagement = () => {
   var [customers, setCustomers] = useState([]);
   return (
     <>
       <CustomerForm setCustomers={setCustomers} />
-      <CustomerList customers={customers} />
+      <ShowCustomer customers={customers} />
     </>
   )
 };
+
+export default CustomerManagement;
