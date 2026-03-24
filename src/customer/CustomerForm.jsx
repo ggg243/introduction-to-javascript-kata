@@ -14,6 +14,7 @@ const CustomerForm = ({ setCustomers }) => {
             phone: phone,
             address: address
         }]);
+    clearInputs();
   };
 
   const clearInputs = () => {
