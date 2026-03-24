@@ -2,8 +2,8 @@ import { useState } from 'react';
 import CustomerForm from './CustomerForm';
 import ShowCustomer from './CustomerList';
 
-let CustomerManagement = () => {
-  var [customers, setCustomers] = useState([]);
+const CustomerManagement = () => {
+  let [customers, setCustomers] = useState([]);
   return (
     <>
       <CustomerForm setCustomers={setCustomers} />
